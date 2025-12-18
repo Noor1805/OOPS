@@ -1,11 +1,12 @@
-#include <stdio.h>
-
 int main() {
-    int a = 10, b = 5;
+    int num = -5;
 
-    printf("%d\n", a > b);
-    printf("%d\n", a < b);
-    printf("%d\n", a == b);
+    if (num > 0)
+        printf("Positive");
+    else if (num < 0)
+        printf("Negative");
+    else
+        printf("Zero");
 
     return 0;
 }
