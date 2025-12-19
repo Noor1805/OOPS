@@ -2,10 +2,8 @@
 using namespace std;
 
 int main() {
-    int a = 10;
-    a += 5;
-
-    cout << a;
+    int age = 20;
+    if (age >= 18)
+        cout << "Eligible";
     return 0;
 }
-
