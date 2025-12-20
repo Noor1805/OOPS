@@ -1,7 +1,14 @@
 #include <iostream>
 using namespace std;
 
+class Demo {
+public:
+    ~Demo() {
+        cout << "Destroyed";
+    }
+};
+
 int main() {
-    cout << "Hello from Module 2, Program 56";
+    Demo d;
     return 0;
 }

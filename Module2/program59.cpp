@@ -1,7 +1,14 @@
 #include <iostream>
 using namespace std;
 
+class Demo {
+public:
+    const int x;
+    Demo() : x(10) {}
+};
+
 int main() {
-    cout << "Hello from Module 2, Program 59";
+    Demo d;
+    cout << d.x;
     return 0;
 }

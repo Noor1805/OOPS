@@ -1,7 +1,17 @@
 #include <iostream>
 using namespace std;
 
+class A {
+public:
+    A() { cout << "A "; }
+};
+
+class B : public A {
+public:
+    B() { cout << "B"; }
+};
+
 int main() {
-    cout << "Hello from Module 2, Program 57";
+    B obj;
     return 0;
 }
