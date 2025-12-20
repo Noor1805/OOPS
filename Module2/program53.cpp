@@ -1,7 +1,13 @@
 #include <iostream>
 using namespace std;
 
+class Demo {
+public:
+    Demo() { cout << "Default\n"; }
+    Demo(int x) { cout << x; }
+};
+
 int main() {
-    cout << "Hello from Module 2, Program 53";
+    Demo d1, d2(5);
     return 0;
 }
