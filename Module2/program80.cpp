@@ -1,20 +1,15 @@
 #include <iostream>
 using namespace std;
 
-class A {
+class Demo {
 public:
-    int x;
-    A(int a) { x = a; }
-    friend A operator+(A, A);
+    int x = 10;
 };
 
-A operator+(A a, A b) {
-    return A(a.x + b.x);
-}
-
 int main() {
-    A a(5), b(10);
-    A c = a + b;
-    cout << c.x;
+    Demo* d = new Demo();
+    cout << d->x;
+    delete d;
     return 0;
 }
+

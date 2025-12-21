@@ -1,7 +1,15 @@
 #include <iostream>
 using namespace std;
 
+class Poly {
+public:
+    int coef, power;
+};
+
 int main() {
-    cout << "Hello from Module 2, Program 78";
+    Poly p;
+    p.coef = 5;
+    p.power = 2;
+    cout << p.coef << "x^" << p.power;
     return 0;
 }
