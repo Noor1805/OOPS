@@ -1,7 +1,17 @@
 #include <iostream>
 using namespace std;
 
+class A {
+    int x = 10;
+    friend void show(A);
+};
+
+void show(A a) {
+    cout << a.x;
+}
+
 int main() {
-    cout << "Hello from Module 2, Program 63";
+    A a;
+    show(a);
     return 0;
 }

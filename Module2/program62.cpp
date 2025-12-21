@@ -1,7 +1,17 @@
 #include <iostream>
 using namespace std;
 
+class Demo {
+public:
+    int x;
+    void set(int x) {
+        this->x = x;
+    }
+};
+
 int main() {
-    cout << "Hello from Module 2, Program 62";
+    Demo d;
+    d.set(20);
+    cout << d.x;
     return 0;
 }
