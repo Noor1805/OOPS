@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
-    cout << "Hello from Module 4, File 5";
+    char c;
+    c = cin.get();
+    cout.put(c);
     return 0;
 }

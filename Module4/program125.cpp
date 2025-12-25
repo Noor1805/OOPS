@@ -1,7 +1,9 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int main() {
-    cout << "Hello from Module 4, File 8";
+    ofstream file("test.txt");
+    file.close();
     return 0;
 }

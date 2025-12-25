@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
-    cout << "Hello from Module 4, File 9";
+    int a;
+    cin >> a;
+    cout << a;
     return 0;
 }
